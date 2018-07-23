@@ -9,7 +9,7 @@ s3Bucket="influxdumps"
 #s3AccessKey= <YOUR ACCESS KEY FOR S3 IAM>
 #s3SecretKey="<YOUR SECRET FOR S3 IAM>"
 
-keys=$(cat ./s3.config)
+keys=$(cat ./configs/s3.config)
 export $keys
 
 echo "My Keys: $s3AccessKey; $s3SecretKey"
@@ -19,7 +19,7 @@ cur_iteration=1
 uname=$(uname)
 folder="${uname}-${date}"
 
-for file in ../dumps/*
+for file in ./dumps/*
     do
         basefile=$(basename $file)
         printf "\n${folder} ($cur_iteration/$file_num) Uploading $basefile"
