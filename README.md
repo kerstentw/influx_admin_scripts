@@ -12,7 +12,7 @@ This suite of scripts will allow you to dump an entire Influx database (includin
 * Create a file with the following syntax for your s3 keys:
 
 ```shell
-s3.config
+#s3.config:
 
 s3AccessKey=<YOUR_ACCESS_KEY>
 s3SecretKey=<YOUR_SECRET_KEY>
