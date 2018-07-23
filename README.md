@@ -1,4 +1,9 @@
-# InfluxDB S3 Backup Scripts
+# InfluxDB Administration Scripts
+
+This is a collection of administration scripts that will allow for the automated administration and creation of continuous queries, s3 backups, query dumps to files, etc. for an influx instance.  The scripts currently assume a non-authenticated influx instance and should be used 'as is' in a testing environment.
+
+
+## InfluxDB S3 Backup Scripts
 
 *For Unix Based Systems Only*
 
@@ -21,4 +26,4 @@ s3SecretKey=<YOUR_SECRET_KEY>
 
 **TO DO:**
 * **Spin all Config into config dir**
-
+* **Create an admin script for logging in to db**
